@@ -1,0 +1,98 @@
+<!--Código inicial padrão.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+<!--Nome da página e link para usar as configurações do CSS.-->
+    <title>Portfólio - Tiago Nascimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Header (faixa no topo da página) com o menu principal que está ligado por links ancorados (#) às respectivas sessões da página.-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre"><strong>Sobre mim</strong></a></li>
+                <li><a href="#formacao"><strong>Formação</strong></a></li>
+                <li><a href="#portfolio"><strong>Portfólio</strong></a></li>
+                <li><a href="#contato"><strong>Contato</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+<!--Aqui é a parte principal da página, com as janelas, links, conteúdos, textos, sessões e imagens.-->
+    <main>
+        <section id="sobre">
+            <hgroup>
+                <img src="Captura de tela 2026-03-22 180735.png" alt= "Foto de Perfil">
+                <h1>Sobre Mim</h1>
+                <h2>Apresentação e Hobbies</h2>
+            </hgroup>
+            <p>Olá! Me chamo Tiago Nascimento Silva, sou acadêmico de Engenharia de Software e gosto especialmente de Design de Interfaces, também tenho interesse por linguagens de programação difíceis, como: Rust, C++ ou Assembly. Aprendo melhor na prática, colocando a mão na massa.</p>
+            <p>Nos meu tempo livre, gosto de assistir séries e filmes, desenhar, tirar fotos e praticar musculação.</p>
+
+        </section>
+
+        <hr>
+<!--Daqui em diante serão as sessões, cada uma liga ao menu por links (href - id) indo direto onde o usuário clicar no menu.-->
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><strong>Graduação:</strong></li>
+                <li>Bacharel em Engenharia de Software - EAD Uninter (Em curso)</li>
+                <li>Técnico em Manutenção e Suporte em Informática - IEMA</li>
+                <li><strong>Idiomas:</strong></li>
+                <li>Inglês Fluente</li>
+                <li>Espanhol Intermediário</li>
+                <li><strong>Qualidades:</strong></li>
+                <li>Dedicado</li>
+                <li>Aprendo rápido</li>
+                <li>Organizado</li>
+                <li>Respeitoso</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="portfolio">
+            <h2>Meus Trabalhos</h2>
+<!--Utilização de <div> para criar uma caixa de apresentação de trabalhos, com detalhes como: título, descrição e link-->
+            <div class="grid-portfolio">
+                <article>
+                    <h3>Trabalho Página Web</h3>
+                    <p>Página web criada em Atividade Prática de Fundamentos de Desenvolvimento de Software.</p>
+                    <a href="https://github.com/tiago532/Uninter-FDS-TiagoSilva">Ver no GitHub</a>
+                </article>
+                <article>
+                    <h3>Vazio</h3>
+                    <p>Ainda não há um trabalho aqui.</p>
+                    <a href="#">Indisponível</a>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+<!--Área de envio de mensagem, com coleta de dados básicos e ligado ao arquivo javascript pelo id "formContato" e botão "validarFormulario()".-->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form id="formContato">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" placeholder="Seu nome completo"><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" placeholder="exemplo@gmail.com"><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" rows="5"></textarea><br><br>
+
+                <button type="button" onclick="validarFormulario()">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+<!--Assinatura com copyright e meu nome-->
+    <footer>
+        <p>&copy; 2026 - Criado por Tiago N. Silva</p>
+    </footer>
+<!--Link para usar as cofigurações javascript-->
+    <script src="script.js"></script>
+</body>
+</html>
